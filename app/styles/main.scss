@@ -1,0 +1,133 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body{
+  color: #fff;
+  font-family: 'Abel', sans-serif;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.slice{
+  width: 100%;
+  display: inline-block;
+  h2{
+    margin: 20px 0 0 20px;
+  }
+}
+
+#video-container {
+  top:0%;
+  left:0%;
+  height: auto;
+  width:100%;
+  overflow: hidden;
+  z-index: 0;
+}
+video {
+  z-index:0;
+  height:auto;
+  width:100vw;
+}
+
+ul#namelist{
+  z-index: 1;
+  position:absolute;
+  li{
+    display: block;
+    margin-left: 10px;
+    a:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+
+h2{
+  margin: 0px;
+}
+
+#personalphoto{
+  width: 45%;
+  height: auto;
+  margin:50px 10px 10px 10px;
+  border-radius: 18px;
+  display: inline-block;
+  float: left;
+}
+
+#bio{
+  width: 45%;
+  height: auto;
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 15px 0 0 15px;
+  display: inline-block;
+  float: left;
+}
+
+#links{
+  text-decoration: none;
+  clear: both;
+  ul{
+    list-style: none;
+    li{
+      display: inline;
+      font-size: 80px;
+      margin-left: 12px;
+    }
+    #github:hover{
+      color:#000;
+    }
+    #linkedin:hover{
+      color:#0077B5;
+    }
+    #twitter:hover{
+      color:#4099FF;
+    }
+    #rebel:hover{
+      color:#f00;
+    }
+  }
+}
+
+.project{
+  margin: 50px 0 0 50px;
+  width: 30%;
+  img{
+    width: 100%;
+    border-radius: 18px;
+  }
+  .description{
+    font-size: 20px;
+  }
+}
+
+
+ab-landing-view .slice{
+  display: flex;
+}
+
+ab-about-view .slice{
+  background-color: #025a7d;
+}
+
+ab-projects-view .slice{
+  background-color: #024864;
+}
+
+ab-contact-view .slice{
+  background-color: #012432;
+}
+
+.footer{
+  background-color: #000;
+  span{
+    color: #f00;
+  }
+}
