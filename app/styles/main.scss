@@ -11,6 +11,10 @@ body{
 a{
   color: #fff;
   text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color:#fff;
+  }
 }
 
 .slice{
@@ -31,22 +35,40 @@ a{
 }
 video {
   z-index:0;
-  height:auto;
+  height:inherit;
   width:100vw;
 }
 
-ul#namelist{
+ul#nav{
   z-index: 1;
+  margin-top: 15px;
   position:absolute;
+  list-style: none;
   li{
-    display: block;
+    display: inline;
     margin-left: 10px;
-    a:hover{
+    a{
+      font-size:17px;
+      &:hover{
         text-decoration: underline;
       }
     }
   }
+}
 
+ul#name{
+  margin-top: 30%;
+  position:absolute;
+  list-style: none;
+  li{
+    color:#000;
+    text-decoration: none;
+    font-size: 20px;
+    h1{
+      font-size: 50px;
+    }
+  }
+}
 
 h2{
   margin: 0px;
@@ -68,12 +90,12 @@ h2{
   margin-top: 50px;
   padding: 15px 0 0 15px;
   display: inline-block;
-  float: left;
 }
 
 #links{
   text-decoration: none;
   clear: both;
+  float: left;
   ul{
     list-style: none;
     li{
@@ -82,22 +104,22 @@ h2{
       margin-left: 12px;
     }
     #github:hover{
-      color:#000;
+      text-shadow: #333 5px 5px 10px;
     }
     #linkedin:hover{
-      color:#0077B5;
+      text-shadow: #333 5px 5px 10px;
     }
     #twitter:hover{
-      color:#4099FF;
+      text-shadow: #333 5px 5px 10px;
     }
     #rebel:hover{
-      color:#f00;
+      text-shadow: #333 5px 5px 10px;
     }
   }
 }
 
 .project{
-  margin: 50px 0 0 50px;
+  margin: 50px 0 20px 50px;
   width: 30%;
   img{
     width: 100%;
@@ -105,9 +127,22 @@ h2{
   }
   .description{
     font-size: 20px;
+    text-align: center;
+  }
+  a{
+    margin-left: 10px;
+    text-decoration: underline;
   }
 }
 
+#contact{
+  h3{
+    margin-left: 20px;
+    a{
+      text-decoration:underline;
+    }
+  }
+}
 
 ab-landing-view .slice{
   display: flex;
@@ -115,6 +150,7 @@ ab-landing-view .slice{
 
 ab-about-view .slice{
   background-color: #025a7d;
+  margin-top: -6px;
 }
 
 ab-projects-view .slice{
