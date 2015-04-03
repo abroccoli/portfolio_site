@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the portfolioApp
  */
-angular.module('portfolioApp')
+angular.module('portfolioApp', [])
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

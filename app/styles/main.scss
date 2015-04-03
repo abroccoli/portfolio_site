@@ -144,6 +144,30 @@ h2{
   }
 }
 
+#contact-form{
+  color: #000;
+  margin: 0 0 0 30%;
+  button{
+    margin: 15px 0 20px 0;
+    width: 100px;
+  }
+  #email{
+    margin-bottom: 15px;
+    border-radius: 4px;
+    width: 400px;
+  }
+  #body{
+    width: 400px;
+    height: 200px;
+    border-radius: 4px;
+    resize: none;
+  }
+  #response{
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
 ab-landing-view .slice{
   display: flex;
 }

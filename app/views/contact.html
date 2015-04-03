@@ -1,6 +1,18 @@
-<div id="contact" class="slice">
+<div id="contact" class="slice" ng-controller="EmailCtrl as ctrl">
   <h2>Contact</h2>
 
-  <h3>Email: acbrocco@syr.edu</h3>
-  <h3><a href="images/NewResume.pdf" title="resume" target="_blank">Resume</a></h3>
+  <form id="contact-form" name="contactForm" ng-submit="ctrl.sendEmail(ctrl.email)" novalidate>
+    <div>
+      <input required id="email" type="email" title="sender" placeholder="Your Email" ng-model="ctrl.email.sender">
+    </div>
+
+    <div>
+      <textarea required id="body" type="textarea" title="body" placeholder="Message" ng-model="ctrl.email.body"></textarea>
+    </div>
+
+    <button type="submit" ng-disabled="contactForm.$invalid">Send!</button>
+    <div id="response" ng-if="contactForm.$submitted">
+      Thanks!
+    </div>
+  </form>
 </div>
