@@ -7,7 +7,7 @@ EmailFactory.$inject = ['$http'];
 
 function EmailFactory($http){
   function sendEmail(email){
-    return $http.post('http://localhost:3000/email', email);
+    return $http.post('https://portfolioapi.herokuapp.com/email', email);
   }
 
   return{
