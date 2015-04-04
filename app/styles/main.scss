@@ -3,6 +3,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+@media only screen
+  and (min-device-width: 0px)
+  and (max-device-width: 1024px){
+
+    ab-landing-view {
+      display: none;
+    }
+}
+
 body{
   color: #fff;
   font-family: 'Abel', sans-serif;
@@ -154,10 +163,10 @@ h2{
   #email{
     margin-bottom: 15px;
     border-radius: 4px;
-    width: 400px;
+    width: 62%;
   }
   #body{
-    width: 400px;
+    width: 62%;
     height: 200px;
     border-radius: 4px;
     resize: none;
