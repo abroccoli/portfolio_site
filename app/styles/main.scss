@@ -10,6 +10,19 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     ab-landing-view {
       display: none;
     }
+
+    ab-about-view{
+      #personalphoto{
+        margin: 50px 30% 10px;
+      }
+      #links{
+        margin: 0 30% 0;
+      }
+      #bio{
+        display:block;
+        margin: 0 30% 0;
+      }
+    }
 }
 
 body{
