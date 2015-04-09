@@ -23,6 +23,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
         margin: 0 30% 0;
       }
     }
+    .project{
+      display:block;
+    }
 }
 
 body{
@@ -99,7 +102,7 @@ h2{
 #personalphoto{
   width: 45%;
   height: auto;
-  margin:50px 10px 10px 10px;
+  margin:50px 10px 10px 5%;
   border-radius: 18px;
   display: inline-block;
   float: left;
@@ -116,6 +119,7 @@ h2{
 
 #links{
   text-decoration: none;
+  width: 45%;
   clear: both;
   float: left;
   ul{
@@ -123,28 +127,31 @@ h2{
     li{
       display: inline;
       font-size: 80px;
-      margin-left: 12px;
+      margin-left: 5%;
     }
     #github:hover{
-      text-shadow: #333 5px 5px 10px;
+      text-shadow: #333 5px 5px 5%;
     }
     #linkedin:hover{
-      text-shadow: #333 5px 5px 10px;
+      text-shadow: #333 5px 5px 5%;
     }
     #twitter:hover{
-      text-shadow: #333 5px 5px 10px;
+      text-shadow: #333 5px 5px 5%;
     }
     #rebel:hover{
-      text-shadow: #333 5px 5px 10px;
+      text-shadow: #333 5px 5px 5%;
     }
   }
 }
 
 .project{
-  margin: 50px 0 20px 50px;
+  margin: 50px 0 20px 10%;
   width: 30%;
+  display: inline-block;
+  float: left;
   img{
     width: 100%;
+    height: 100px;
     border-radius: 18px;
   }
   .description{
